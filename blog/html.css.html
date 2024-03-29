@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <head>
+      <title>Blog</title>
+    </head>
+  </div>
+  <body>
+    <div class="sticky">Back to <a href="/../index.html">home</a></div>
+    <div class="header">
+      <h1>
+        What are the differences between relative, absolute, and fixed
+        positioning?
+      </h1>
+    </div>
+
+    <div class="content" id="jump-content">
+      <p>
+        The CSS position property defines, as the name says, how the element is
+        positioned on the web page. There are several different types of
+        positioning, as listed below:
+      </p>
+      <ul>
+        <li>
+          <strong>Static -</strong> this is the default value, all elements are
+          in order as they appear in the document.
+        </li>
+        <li>
+          <strong>Relative -</strong> the element is positioned relative to its
+          normal position.
+        </li>
+        <li>
+          <strong>Absolute - </strong> the element is positioned absolutely to
+          its first positioned parent.
+        </li>
+        <li>
+          <strong>Fixed -</strong> the element is positioned related to the
+          browser window.
+        </li>
+        <li>
+          <strong>Sticky - </strong> the element is positioned based on the
+          user’s scroll position.
+        </li>
+      </ul>
+
+      <div class="position">
+        <h2>position: static</h2>
+        <p>
+          By default, position an element based on its current position in the
+          flow. The <em>top, right, bottom, left and z-index </em>properties do
+          not apply.
+        </p>
+        <div class="image-container">
+          <img src="/blog/image/relative.png" alt="static" />
+          <br /><cite>Position: static</cite>
+        </div>
+        <p>index.html :</p>
+        <pre class="code">
+          &lt;div class=”parent”&gt;
+           &lt;div class=”box” id=”one”&gt;One&lt;/div&gt;
+           &lt;div class=”box” id=”two”&gt;Two&lt;/div&gt;
+           &lt;div class=”box” id=”three”&gt;Three&lt;/div&gt;
+           &lt;div class=”box” id=”four”&gt;Four&lt;/div&gt;
+          &lt;/div&gt;
+          </pre
+        >
+        <p>style.css</p>
+        <pre class="code">
+          .parent {
+            border: 2px black dotted;
+            display: inline-block;
+           }.box {
+            display: inline-block;
+            background: red;
+            width: 100px;
+            height: 100px;
+           }
+           #two {
+             background: green;
+           }
+          </pre
+        >
+      </div>
+
+      <div class="position">
+        <h2>Position: relative</h2>
+        <p>
+          Setting the top, right, bottom, and left properties of an element with
+          position: relative; property will cause it to adjust from its normal
+          position. The other objects or elements will not fill the gap.
+        </p>
+        <h3>
+          What happens when we want to move the GreenBox but do not want to
+          affect the layout around it?
+        </h3>
+        <div class="image-container">
+          <img src="/blog/image/relative.png" alt="relative" />
+          <div class="code"></div>
+          <br /><cite>Position: relative</cite>
+        </div>
+        <p>style.css</p>
+        <pre class="code">
+          #two {
+            top: 20px;
+            left: 20px;
+            background: green;
+            position: relative;
+          }
+          </pre
+        >
+        <p>
+          This is where position relative comes in. Move the green box relative
+          to its current position to 20px from the left and top without changing
+          the layout around it. Thus, <strong>leaving a gap </strong>for the
+          green box where it would have been had it not been position.
+        </p>
+      </div>
+
+      <div class="position">
+        <h2>Position: absolute</h2>
+        <p>
+          An element with position: absolute; will cause it to adjust its
+          position with respect to its parent. If no parent is present, then it
+          uses the document body as parent.
+        </p>
+        <div class="image-container">
+          <img src="/blog/image/absolute.png" alt="relative" />
+          <br /><cite>Position: absolute</cite>
+        </div>
+
+        <p>style.css</p>
+        <pre class="code">
+          #two {
+            top: 20px;
+            left: 20px;
+            background: green;
+            position: absolute;
+          }
+          </pre
+        >
+
+        <p>
+          By applying position: absolute to the GreenBox, it will not leave any
+          gap where it would have been. The position of the GreenBox is based on
+          its parent position (the dotted border). Thus, moving 20px to the left
+          and bottom from the top-left origin of the dotted border.
+        </p>
+      </div>
+
+      <div class="position">
+        <h2>Position: fixed</h2>
+        <p>
+          Element is fixed relative to the viewport and remains in the same
+          position on the screen regardless of scrolling.
+        </p>
+      </div>
+      <div class="position">
+        <h2>Position: sticky</h2>
+        <p>
+          Element is initially positioned according to the normal flow, but
+          becomes fixed once it reaches a specified scroll position within its
+          containing block. It remains fixed until the container's bottom edge
+          reaches the bottom of the viewport.
+        </p>
+      </div>
+      <p>
+        Both <strong>fixed</strong> and <strong>sticky</strong> positioning are
+        commonly used for elements like headers, navigation bars, or sidebars
+        that need to remain visible as the user scrolls through content.
+        However, sticky positioning is more versatile in scenarios where you
+        want an element to remain fixed within a container, while fixed
+        positioning is useful when you want an element to remain fixed relative
+        to the viewport.
+      </p>
+
+      <div>
+        <h3>
+          <a href="#jump-content"
+            ><strong class="btn">Jump to the top</strong></a
+          >
+        </h3>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      margin: 0em 8em 2em 8em;
+      padding: 1em;
+    }
+    .btn {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      width: min-content;
+      border-radius: 0.5em;
+      padding: 0.5em;
+      box-shadow: gray;
+    }
+    .btn:hover {
+      opacity: 0.5;
+    }
+    .sticky {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 2px;
+      border-radius: 4px;
+      margin-top: 0;
+      position: sticky;
+      top: 5px;
+      left: 0;
+      padding: 30;
+      width: 100px;
+      height: auto;
+      box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
+    }
+
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      text-align: center;
+    }
+    .content {
+      background-color: rgb(161, 144, 123);
+      padding: 1em;
+      border-radius: 1em;
+    }
+    .image-container {
+      text-align: center;
+    }
+    .imgage-container img {
+      display: block;
+      margin: 0 auto;
+    }
+    .position {
+      background-color: rgba(255, 251, 246, 0.621);
+      margin: 1em 5em 1em 5em;
+      border-radius: 1em;
+      padding: 1em;
+    }
+    .image-container img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .code {
+      background-color: rgba(165, 165, 165, 0.325);
+      text-align: left;
+      border-radius: 1em;
+      overflow: auto;
+    }
+  </style>
+</html>
