@@ -126,10 +126,14 @@ p {
   margin-top: 0;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
+  width:fit-content;
 }
 .btn :hover {
   background-color: rgba(73, 132, 183, 0.375);
 
+}
+.btn a {
+  color: aliceblue;
 }
 
 
@@ -246,7 +250,10 @@ a:hover {
 .jump a {
   color: wheat;
 }
-/*
+/* ------------------learning-path-------------- */
+
+
+
 
 
 
