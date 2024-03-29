@@ -157,10 +157,11 @@ p {
   margin-top: 0;
   position: sticky;
   top: 2em;
-  padding: 0.2em;
-  width: 15%;
-  height: auto;
+  padding: 0.5em;
+  width: auto;
+  max-width: 15%;
   box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
+  overflow:hidden;
 }
 .sticky a {
   color: black;
@@ -175,6 +176,12 @@ p {
   text-align: center;
 }
 
+.sticky ul {
+ 
+  max-height: 200px;
+
+}
+
 @media screen and (max-width: 900px) {
   p {
     margin: 1em;
@@ -182,15 +189,15 @@ p {
 }
 @media screen and (max-width: 550px) {
   .sticky {
-    width: 80px;
+    width: 80%;
     font-size: 0.7em;
   }
 }
 
 @media screen and (max-width: 450px) {
   .sticky {
-    width: 40px;
-    font-size: 0.3em;
+    width: 100%;
+    font-size: 0.5em;
   }
 }
 
