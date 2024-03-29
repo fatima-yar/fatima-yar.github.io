@@ -42,11 +42,12 @@ body {
   background: rgb(18, 59, 95);
   color: white;
   font-family: 'Times New Roman', Times, serif;
-  font-size: large;
+  font-size: 1em;
   width: 100px;
-  padding: .4em;
+  padding: .1em;
   margin: .5em;
   border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
 }
 .links a{
   color: wheat;
@@ -127,8 +128,8 @@ p {
   box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
 }
 .btn :hover {
-  background-color: rgba(73, 131, 183, 0.9);
-  color: black;
+  background-color: rgba(73, 132, 183, 0.375);
+
 }
 
 
@@ -144,7 +145,7 @@ p {
   }
 }
 
-.sticky {
+/*.sticky {
   background-color: #ffff88;
   color: rgb(0, 0, 0);
   padding: 2px;
@@ -181,6 +182,7 @@ p {
   max-height: 200px;
 
 }
+*/
 
 @media screen and (max-width: 900px) {
   p {
@@ -230,6 +232,7 @@ a {
 }
 a:hover {
   color: red;
+
 }
 .jump {
   background: rgb(18, 59, 95);
@@ -237,6 +240,7 @@ a:hover {
   width: max-content;
   padding: .4em;
   border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
 }
 
 .jump a {
