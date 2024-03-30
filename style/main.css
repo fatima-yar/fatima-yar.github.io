@@ -7,19 +7,20 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  margin: 0em 5em 2em 5em;
+  margin: 0em .5em 0em .5em;
   padding: 1em;
 }
 
-.flexbox-container {
+/*.flexbox-container {
   background-color: rgba(220, 220, 220, 0.715);
-  padding: 1em;
+  padding: 0;
+  margin: 0;
   border-radius: 1em;
-}
+}*/
 
 .flexbox-item {
   background-color: rgba(255, 251, 246, 0.621);
-  margin: 1em 2em 1em 2em;
+  margin: 1em 1em 1em 1em;
   border-radius: 1em;
   padding: 1em;
 }
@@ -64,7 +65,7 @@ img {
 
 h1 {
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat', Tahoma;
 }
 h3 {
   text-size-adjust: 8em;
@@ -233,21 +234,21 @@ p {
     margin: 1em;
   }
   body {
-    margin: 0em 1em 2em 1em;
+    margin: 0em 0em 0em 0em;
   }
 }
 @media screen and (max-width: 550px) {
   .sticky {
-    width: 80%;
-    font-size: 0.7em;
+    width: 60px;
+    font-size: 0.5em;
   }
  
 }
 
 @media screen and (max-width: 450px) {
   .sticky {
-    width: 100%;
-    font-size: 0.5em;
+    width:50px;
+    font-size: 0.2em;
   }
 }
 
