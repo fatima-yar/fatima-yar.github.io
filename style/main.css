@@ -90,7 +90,37 @@ p {
   font-family: 'Comic Neue', cursive;
   padding: .5em;
 }
+#domH {
+  width: 500px;
+  border-radius: 0%;
+  position: static;
+  height: auto;
+  display: block;
+  margin: 0 ;
+  box-shadow: 0 0 0;
+  padding: 1em;
 
+}
+@media screen and (max-width: 610px) {
+  #domH {
+    width: 200px;
+    border-radius: 0;
+    position: static;
+    height: auto;
+    display: block;
+    margin-left: 0%;
+  }
+}
+@media screen and (max-width: 360px) {
+  #domH {
+    width: 0px;
+    border-radius: 0;
+    position: static;
+    height: auto;
+    display: block;
+    margin-left: 0%;
+  }
+}
 #exp {
   color: rgba(4, 46, 83, 0.64);
   font-family: 'Comic Neue', cursive;
