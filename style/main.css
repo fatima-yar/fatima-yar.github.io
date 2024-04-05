@@ -93,7 +93,7 @@ p {
   padding: .5em;
 }
 #house {
-  width: 200px;
+  width: 300px;
   border-radius: 0%;
   position: static;
   height: auto;
@@ -107,21 +107,23 @@ p {
 @media screen and (max-width: 610px) {
   #house {
     width: 200px;
-    border-radius: 0;
+    border-radius: 0%;
     position: static;
     height: auto;
     display: block;
     margin-left: 0%;
+    box-shadow: 0 0 0;
   }
 }
 @media screen and (max-width: 360px) {
   #house {
     width: 0px;
-    border-radius: 0;
+    border-radius: 0%;
     position: static;
     height: auto;
     display: block;
     margin-left: 0%;
+    box-shadow: 0 0 0;
   }
 }
 #exp {
