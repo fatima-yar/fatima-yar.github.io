@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  margin: 0em .5em 0em .5em;
+  margin: 0em 6em 0em 6em;
   padding: 1em;
 }
 
@@ -17,7 +17,9 @@ body {
   margin: 0;
   border-radius: 1em;
 }*/
-
+.quot {
+  color: rgb(73, 9, 9);
+}
 .flexbox-item {
   background-color: rgba(255, 251, 246, 0.621);
   margin: 1em 1em 1em 1em;
@@ -68,14 +70,14 @@ h1 {
   font-family: 'Caveat', Tahoma;
 }
 h3 {
-  text-size-adjust: 8em;
+  text-size-adjust: 6em;
 }
 p {
   font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0 5em 0 5em;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .flexbox-item ul {
@@ -90,19 +92,20 @@ p {
   font-family: 'Comic Neue', cursive;
   padding: .5em;
 }
-#domH {
-  width: 500px;
+#house {
+  width: 200px;
   border-radius: 0%;
   position: static;
   height: auto;
   display: block;
-  margin: 0 ;
+  margin: 0 25% 0 25% ;
   box-shadow: 0 0 0;
   padding: 1em;
 
+
 }
 @media screen and (max-width: 610px) {
-  #domH {
+  #house {
     width: 200px;
     border-radius: 0;
     position: static;
@@ -112,7 +115,7 @@ p {
   }
 }
 @media screen and (max-width: 360px) {
-  #domH {
+  #house {
     width: 0px;
     border-radius: 0;
     position: static;
