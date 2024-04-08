@@ -9,7 +9,6 @@ body {
   padding: 1em;
   margin: 0em 6em 0em 6em;
   padding: 1em;
-  
 }
 
 /*.flexbox-container {
@@ -22,7 +21,6 @@ body {
   color: rgb(73, 9, 9);
 }
 .flexbox-item {
-
   background-color: rgba(255, 251, 246, 0.621);
   margin: 1em 1em 1em 1em;
   border-radius: 1em;
@@ -44,18 +42,19 @@ body {
   position: relative;
 }
 */
+
 .links {
-   color: rgb(255, 0, 0);
-   font-family: "Poppins", sans-serif;
-   font-weight: 300;
-   font-style: normal;
+  color: rgb(255, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 1em;
   width: fit-content;
-  padding: .5em;
-  margin: .5em;
+  padding: 0.5em;
+  margin: 0.5em;
   border-radius: 1em;
 }
-.links a{
+.links a {
   color: rgb(0, 0, 0);
 }
 
@@ -74,39 +73,35 @@ h1 {
   font-family: 'Caveat', Tahoma;
 }
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: normal;
   text-size-adjust: 6em;
 }
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
   margin: 0 5em 0 5em;
-
 }
 ol {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
   margin: 0 5em 0 5em;
-
 }
 
 .flexbox-item ul {
   color: rgb(116, 40, 40);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
   margin: 0 5em 0 5em;
-
-  
 }
 .bloglink {
   list-style-type: none;
   font-family: 'Comic Neue', cursive;
-  padding: .5em;
+  padding: 0.5em;
 }
 .pic {
   width: 300px;
@@ -118,8 +113,6 @@ ol {
   margin-right: auto; /* Center horizontally */
   box-shadow: 0 0 0;
   padding: 1em;
-
-
 }
 @media screen and (max-width: 610px) {
   #pic {
@@ -145,37 +138,35 @@ ol {
 }
 #exp {
   color: rgba(4, 46, 83, 0.64);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
-
-
 }
 #book {
   color: rgba(4, 46, 83, 0.64);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-style: normal
+  font-style: normal;
 }
 
 #puzzle {
   color: rgba(4, 46, 83, 0.64);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-style: normal
+  font-style: normal;
 }
 #camp {
   color: rgba(4, 46, 83, 0.64);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-style: normal
+  font-style: normal;
 }
 
 #cat {
   color: rgba(4, 46, 83, 0.64);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-style: normal
+  font-style: normal;
 }
 
 .btn {
@@ -187,17 +178,14 @@ ol {
   margin-top: 0;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
-  width:fit-content;
+  width: fit-content;
 }
 .btn :hover {
   background-color: rgba(73, 132, 183, 0.375);
-
 }
 .btn a {
   color: aliceblue;
 }
-
-
 
 @media screen and (max-width: 200px) {
   img {
@@ -226,8 +214,6 @@ ol {
   height: auto;
   box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
 }
-
-
 
 .sticky {
   background-color: #ffffff;
@@ -296,12 +282,11 @@ ol {
     width: 60px;
     font-size: 0.5em;
   }
- 
 }
 
 @media screen and (max-width: 450px) {
   .sticky {
-    width:50px;
+    width: 50px;
     font-size: 0.2em;
   }
 }
@@ -314,9 +299,8 @@ footer {
   padding: 5px;
 }
 a {
-  color: #000000;
+  color: #ff7c01;
   text-decoration: none;
-  f
 }
 
 .socials li {
@@ -335,13 +319,12 @@ a {
 }
 a:hover {
   color: red;
-
 }
 .jump {
   background: rgb(18, 59, 95);
   color: white;
   width: max-content;
-  padding: .4em;
+  padding: 0.4em;
   border-radius: 1em;
   box-shadow: 0 4px 8px rgba(23, 23, 23, 0.725);
 }
@@ -350,14 +333,6 @@ a:hover {
   color: wheat;
 }
 /* ------------------learning-path-------------- */
-
-
-
-
-
-
-
-
 
 /*.wrapper {
   display: grid;
