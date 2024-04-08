@@ -9,6 +9,7 @@ body {
   padding: 1em;
   margin: 0em 6em 0em 6em;
   padding: 1em;
+  
 }
 
 /*.flexbox-container {
@@ -21,6 +22,7 @@ body {
   color: rgb(73, 9, 9);
 }
 .flexbox-item {
+
   background-color: rgba(255, 251, 246, 0.621);
   margin: 1em 1em 1em 1em;
   border-radius: 1em;
@@ -44,7 +46,9 @@ body {
 */
 .links {
    color: rgb(255, 0, 0);
-   font-family: 'Comic Neue', cursive;
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-style: normal;
   font-size: 1em;
   width: fit-content;
   padding: .5em;
@@ -70,21 +74,33 @@ h1 {
   font-family: 'Caveat', Tahoma;
 }
 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
   text-size-adjust: 6em;
 }
 p {
-  font-family: 'Comic Neue', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-style: normal;
   margin: 0 5em 0 5em;
-  font-size: 1em;
+
+}
+ol {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 5em 0 5em;
+
 }
 
 .flexbox-item ul {
   color: rgb(116, 40, 40);
-  font-family: 'Comic Neue', cursive;
-  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-style: normal;
+  margin: 0 5em 0 5em;
+
   
 }
 .bloglink {
@@ -92,20 +108,21 @@ p {
   font-family: 'Comic Neue', cursive;
   padding: .5em;
 }
-#house {
+.pic {
   width: 300px;
   border-radius: 0%;
   position: static;
   height: auto;
   display: block;
-  margin: 0 25% 0 25% ;
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
   box-shadow: 0 0 0;
   padding: 1em;
 
 
 }
 @media screen and (max-width: 610px) {
-  #house {
+  #pic {
     width: 200px;
     border-radius: 0%;
     position: static;
@@ -116,7 +133,7 @@ p {
   }
 }
 @media screen and (max-width: 360px) {
-  #house {
+  #pic {
     width: 0px;
     border-radius: 0%;
     position: static;
@@ -128,35 +145,37 @@ p {
 }
 #exp {
   color: rgba(4, 46, 83, 0.64);
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+
 }
 #book {
   color: rgba(4, 46, 83, 0.64);
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal
 }
 
 #puzzle {
   color: rgba(4, 46, 83, 0.64);
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal
 }
 #camp {
   color: rgba(4, 46, 83, 0.64);
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal
 }
 
 #cat {
   color: rgba(4, 46, 83, 0.64);
-  font-family: 'Comic Neue', cursive;
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal
 }
 
 .btn {
