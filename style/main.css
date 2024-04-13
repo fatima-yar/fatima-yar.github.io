@@ -73,9 +73,10 @@ h1 {
 }
 h3 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   font-style: normal;
   text-size-adjust: 6em;
+  margin: 0 3em 0 3em;
 }
 p {
   font-family: 'Poppins', sans-serif;
@@ -114,18 +115,22 @@ ol {
   padding: 1em;
 }
 @media screen and (max-width: 610px) {
-  #pic {
+  .pic {
     width: 200px;
     border-radius: 0%;
     position: static;
     height: auto;
     display: block;
-    margin-left: 0%;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 0 0;
+  }
+  h3 {
+    margin: 0;
   }
 }
 @media screen and (max-width: 360px) {
-  #pic {
+  .pic {
     width: 0px;
     border-radius: 0%;
     position: static;
@@ -133,6 +138,9 @@ ol {
     display: block;
     margin-left: 0%;
     box-shadow: 0 0 0;
+  }
+  h3 {
+    margin: 0;
   }
 }
 #exp {
