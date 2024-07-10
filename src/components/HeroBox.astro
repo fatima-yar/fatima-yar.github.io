@@ -1,22 +1,48 @@
 ---
+import AboutMe from './UI/AboutMe.astro'
+import MyPhoto from './UI/MyPhoto.astro'
 import BookingButton from './UI/PortfolioButton.astro'
----
 
-<header class="bg-gradientPink">
+---
+<!-- <header>
+<div class="flex justify-center">
+  <div class="lg:w-[60%] bg-slate-500 flex">
+
+    <div class="justify-start">
+      <img src="./photo.jpg" class="max-w-full h-auto" alt="Your Photo"/>
+    </div>
+
+ 
+    <div class="w-[50%] lg:pl-32">
+
+      <AboutMe />
+    </div>
+  </div>
+</div>
+</header> -->
+
+
+<header class="">
   <div class="container px-0 py-0 mx-auto">
     <div class="lg:flex">
+      <div class="flex justify-end mt-2 lg:mt-0 w-1/2 lg:w-1/2">
+        <img class="w-full h-full lg:max-w-xs" src="./photo.jpg" alt="Catalogue-pana.svg">
+      </div>
       <div class="w-full lg:w-1/2">
-        <div class="lg:max-w-full">
-          <h1 class="text-3xl font-cantora text-darkGrey lg:text-6xl pt-20">Hairdressing With a Purpose!</h1>
-          <p class="mt-3 text-lg text-darkGrey pt-10">We Believe our Reputation is only as good as our last Hair service, Working together as a Team WE ensure our Clients always LOOK and FEEL Magnificent!</p>
+        <div class="">
+          <h1 class="text-xl  text-lightGrey lg:text-3xl pt-20">About Me</h1>
+          <div class="text-lightGrey text-justify">
+            <p >I'm Fatima a full stack developer with a unique background in interior design. After a decade of creating beautiful, functional spaces, I transitioned into tech, graduating from Dev Academy.</p>
+            
+              <p> specialize in HTML, CSS, JavaScript, TypeScript, React, Node.js, SQL, Knex, and Tailwind CSS, currently working on projects with Astro. My attention to detail and project management skills from design enhance my technical work, allowing me to create intuitive and visually appealing digital experiences.</p>
+              
+              <p>Driven by curiosity and a passion for growth, I'm eager to contribute to innovative projects and build impactful digital solutions.</p> <p>Thanks for visiting my site!</p></div>
           <div class="pt-4 lg:pt-10">
           <BookingButton />
-        </div></div>
+        </div>
+      </div>
       </div>
 
-      <div class="flex justify-end mt-6 lg:mt-0 w-full lg:w-1/2">
-        <img class="w-full h-full lg:max-w-xl" src="./heroimage.png" alt="Catalogue-pana.svg">
-      </div>
     </div>
   </div>
 </header>
