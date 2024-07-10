@@ -1,23 +1,123 @@
 ---
 import NavBarButtons from "./UI/NavBarButtons.astro";
+
 ---
+
+
+
+<header class="sticky top-0 z-50 w-full pt-6 pb-6">
+<nav class="relative  items-center">
+
+
+<div class="lg:hidden">
+  <button class="navbar-burger text-white p-2 pl-2 hover:text-brightPink">
+    <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <title>Mobile menu</title>
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+    </svg>
+  </button>
+</div>
+<NavBarButtons/>
+</nav>
+
+<div class="navbar-menu relative z-50 hidden">
+  <div class="navbar-backdrop fixed inset-0"></div>
+  <nav class="fixed  flex flex-col w-32 max-w-sm py-2 px-2 bg-lightGrey rounded-md">
+    <div class="flex items-center mb-1">
+      <a class="mr-auto text-3xl font-bold leading-none" href="#">
+
+      </a>
+      <button class="navbar-close">
+        <svg class="h-6 w-6 text-black cursor-pointer hover:text-brightPink" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      
+      </button>
+      </div>
+      <div>
+				<ul>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-black hover:text-brightPink opacity-60  rounded" href="/">Home</a>
+					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-black hover:text-brightPink opacity-60  rounded" href="/">Portfolio</a>
+					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-black hover:text-brightPink opacity-60  rounded" href="/">Services</a>
+					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-black hover:text-brightPink opacity-60  rounded" href="/">About Us</a>
+					</li>
+          <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-black hover:text-brightPink opacity-60  rounded" href="/">Career</a>
+					</li>
+          				<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-black hover:text-brightPink opacity-60  rounded" href="/">Contact</a>
+					</li>
+        </header>
+
+
+
+
+          <script>
+            // Burger menus
+            document.addEventListener('DOMContentLoaded', function() {
+                // open
+                const burger = document.querySelectorAll('.navbar-burger');
+                const menu = document.querySelectorAll('.navbar-menu');
+            
+                if (burger.length && menu.length) {
+                    for (var i = 0; i < burger.length; i++) {
+                        burger[i].addEventListener('click', function() {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            
+                // close
+                const close = document.querySelectorAll('.navbar-close');
+                const backdrop = document.querySelectorAll('.navbar-backdrop');
+            
+                if (close.length) {
+                    for (var i = 0; i < close.length; i++) {
+                        close[i].addEventListener('click', function() {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            
+                if (backdrop.length) {
+                    for (var i = 0; i < backdrop.length; i++) {
+                        backdrop[i].addEventListener('click', function() {
+                            for (var j = 0; j < menu.length; j++) {
+                                menu[j].classList.toggle('hidden');
+                            }
+                        });
+                    }
+                }
+            });
+            </script>
 
 <!-- Hamburger Menu Button -->
 
-<div class="tham tham-e-squeeze tham-w-6">
+<!-- <div class="tham tham-e-squeeze tham-w-6">
   <div class="tham-box">
     <div class="tham-inner bg-white" />
   </div>
-</div>
+</div> -->
 <!-- Navigation List -->
-<ul id="nav-list" class="flex space-x-24 space-y-10 justify-center">
+<!-- <ul id="nav-list" class="flex lg:space-x-16 space-x-4 space-y-2 p-8 justify-center">
   <li></li>
   <li><a class="text-lightGrey hover:text-brightPink" href="/">Home</a></li>
   <li><a class="text-lightGrey hover:text-brightPink" href="/portfolio">About&nbspMe</a></li>
   <li><a class="text-lightGrey hover:text-brightPink" href="/services">Portfolio</a></li>
   <li><a class="text-lightGrey hover:text-brightPink" href="/career">My&nbspCV</a></li>
   <li><a class="text-lightGrey hover:brightness-150 bg-gradientPink pl-3 pr-3 pt-2 pb-2 rounded-md" href="/contactus">Contact</a></li>
-</ul>
+</ul> -->
 
   
 <!-- <script>
@@ -28,4 +128,3 @@ tham.addEventListener('click', () => {
   tham.classList.toggle('tham-active');
 });
 </script> -->
-
