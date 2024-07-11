@@ -1,29 +1,20 @@
 ---
-import CVButton from "./UI/CVButton.astro";
+import ContactBtn from "./UI/GithubBtn.astro";
+import GithubBtn from "./UI/GithubBtn.astro"
+import LinkedinBtn from "./UI/LinkedinBtn.astro"
+import PhoneBtn from "./UI/PhoneBtn.astro"
+import EmailBtn from "./UI/EmailBtn.astro"
 ---
 
 <div class="pt-10">
 <div class="text-lightBlue text-3xl flex justify-center">Contact Me</div>
 <div class="text-lightGrey flex justify-center pt-8">What to get in touch? Here are the ways you can reach out!</div>
-<div class="grid grid-cols-2 gap-4 w-[30%] mx-auto pt-10">
- 
-<div class="text-blackhover:brightness-105 bg-gray-300 border-4 border-double border-brightPink pl-6 pr-6 pt-6 pb-6 rounded-md  hover:scale-105 transition-all duration-300">
-<button onclick="window.open('mailto:fatima.yarhamidi@gmail.com', '_blank');" >Email</button>
-</div>
+<div class="grid lg:grid-cols-2 md:grid-cols-2 lg:gap-8 gap-4 w-[50%] mx-auto pt-10">
+  <EmailBtn/>
+ <PhoneBtn/>
+<GithubBtn/>
+<LinkedinBtn/>
 
-<div class="text-blackhover:brightness-105 bg-gray-300 border-4 border-double border-brightPink pl-6 pr-6 pt-6 pb-6 rounded-md  hover:scale-105 transition-all duration-300">
-  <button onclick="window.open('mailto:fatima.yarhamidi@gmail.com', '_blank');" >Phone</button>
-  </div>
-  
-
-  <div class="text-blackhover:brightness-105 bg-gray-300 border-4 border-double border-brightPink pl-6 pr-6 pt-6 pb-6 rounded-md  hover:scale-105 transition-all duration-300">
-    <button onclick="window.open('mailto:fatima.yarhamidi@gmail.com', '_blank');" >Github</button>
-    </div>
-    
-    <div class="relative text-black hover:brightness-105 bg-gray-300 border-4 border-double border-brightPink pl-6 pr-6 pt-6 pb-6 rounded-md hover:scale-105 transition-all duration-300">
-      <button onclick="window.open('mailto:fatima.yarhamidi@gmail.com', '_blank');">LinkedIn</button>
-      <img src="instagram.png" class="absolute top-0 right-0 mt-3 mr-6">
-    </div>
     
         
 </div>
