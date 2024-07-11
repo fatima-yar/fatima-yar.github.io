@@ -16,7 +16,7 @@ export default {
         darkGrey: '#252525',
       },
       backgroundImage: {
-        gradientPink: 'linear-gradient(to right, #D690CA, #B4139A)',
+        gradientPink: 'linear-gradient(to right, #D690CA, #F200CB)',
       },
       spacing: {
         55: '55%',
