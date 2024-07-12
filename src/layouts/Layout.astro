@@ -3,7 +3,7 @@ interface Props {
 	title: string;
 }
 
-
+import { ViewTransitions } from 'astro:transitions'
 ---
 
 <!doctype html>
@@ -25,9 +25,16 @@ interface Props {
 		<link rel="icon" type="image/svg+xml" href="./logoF.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Fatima</title>
-  </head>
+<ViewTransitions/>
 	</head>
 	<body class="bg-darkBlue">
 		<slot />
 	</body>
 </html>
+
+<style>
+   html {
+--scroll-behavior: smooth!important;
+scroll-behavior: smooth!important;
+} 
+</style>

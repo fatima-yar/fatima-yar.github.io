@@ -5,7 +5,7 @@ import NavBarButtons from "./UI/NavBarButtons.astro";
 
 
 
-<header class="sticky top-0 z-50 w-full pt-10 pb-10 bg-darkBlue/80 backdrop-brightness-70 backdrop-blur-sm">
+<header class="sticky top-0 z-50 w-full pt-2 pb-2 lg:pt-10 lg:pb-10 bg-darkBlue/80 backdrop-brightness-70 backdrop-blur-sm">
 <nav class="relative  items-center">
 
 
@@ -20,15 +20,15 @@ import NavBarButtons from "./UI/NavBarButtons.astro";
 <NavBarButtons/>
 </nav>
 
-<div class="navbar-menu relative z-50 hidden">
+<div class="navbar-menu relative z-10 hidden">
   <div class="navbar-backdrop fixed inset-0"></div>
-  <nav class="fixed  flex flex-col w-32 max-w-sm py-2 px-2 bg-darkBlue/80 backdrop-brightness-70 backdrop-blur-sm rounded-md">
+  <nav class="fixed  flex flex-col w-32 max-w-sm py-1 px-1 bg-darkBlue/80 backdrop-brightness-70 backdrop-blur-sm rounded-md">
     <div class="flex items-center mb-1">
       <a class="mr-auto text-3xl font-bold leading-none" href="#">
 
       </a>
       <button class="navbar-close">
-        <svg class="h-6 w-6 text-black cursor-pointer hover:text-brightPink" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg class="h-6 w-6 text-white cursor-pointer hover:text-brightPink" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       
@@ -37,13 +37,13 @@ import NavBarButtons from "./UI/NavBarButtons.astro";
       <div>
 				<ul>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink   " href="/">Home</a>
+						<a class="block pl-4 pr-4 pb-4 pt-0 text-sm font-semibold text-lightGrey hover:text-brightPink   " href="/">Home</a>
 					</li>
           <li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink " href="/">About Me</a>
+						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink " href="/#about">About Me</a>
 					</li>
           <li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink  " href="/">Portfolio</a>
+						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink  " href="/portfolio">Portfolio</a>
 					</li>
           <li class="mb-1">
 						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink  target="_blank" href="https://drive.google.com/file/d/1mmUvaNZLvCOm36xRphLu-GXKk0lXyyK7/view?usp=sharing" " href="/">My CV</a>
@@ -51,7 +51,7 @@ import NavBarButtons from "./UI/NavBarButtons.astro";
 
 					
           				<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink" >Contact</a>
+						<a class="block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink" href="/#contact" >Contact</a>
 					</li>
         </header>
 

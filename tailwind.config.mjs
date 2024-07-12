@@ -11,6 +11,7 @@ export default {
       scale: {
         105: '1.05',
       },
+
       colors: {
         darkBlue: '#141336',
         lightGrey: '#EEEEEE',
@@ -27,6 +28,7 @@ export default {
         55: '55%',
         35: '135px',
         te: '720px',
+        project: '375px',
       },
     },
   },

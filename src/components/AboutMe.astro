@@ -1,11 +1,12 @@
 ---
 import Descriotion from "../components/UI/Description.astro"
 import PortfolioButton from "./UI/CVButton.astro"
+const { id } = Astro.props;
 ---
 
-<div class="lg:flex lg:mt-40 mt-10">
+<div id={id} class="lg:flex lg:mt-40 mt-10">
   <div class="flex-none ml-4 lg:ml-[25%]">
-    <img src="./photo.jpg" class="h-auto w-60 object-cover border-4 border-double border-brightPink ">
+    <img src="./photo.jpg" class="h-auto w-60 object-cover border-4 border-double border-brightPink" alt="photo">
 
   </div>
   <div class="lg:ml-12 mr-4 lg:mr-[25%] ml-4">

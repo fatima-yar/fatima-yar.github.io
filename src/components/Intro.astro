@@ -1,7 +1,8 @@
 ---
 import Title from "./UI/Title.astro";
+const { id } = Astro.props;
 ---
 
-<div class="flex items-center justify-center pt-20">
+<div id={id} class="flex items-center justify-center pt-20">
   <Title/>
 </div>
