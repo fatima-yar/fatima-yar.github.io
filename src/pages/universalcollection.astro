@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import NavBarButtons from '../components/UI/NavBarButtons.astro';
+import Title from '../components/UI/Title.astro'
+import HeroBox from '../components/HeroBox.astro';
+import Intro from '../components/Intro.astro';
+import NavBar from '../components/NavBar.astro';
+import AboutMe from '../components/AboutMe.astro'
+import Portfolio from '../components/Portfolio.astro';
+import ContactForm from '../components/ContactForm.astro';
+
+
+
+
+---
+
+<Layout title="Universal Book Collection">
+	<section class="text-lightGrey">
+    <h2>Universal Book Collection</h2>
+    <p><strong>Project Description:</strong></p>
+    <p>
+        Universal Book Collection is a platform designed for everyone to share and add their recently read books. Initially, I invited family and friends to contribute by adding the books they've read. The idea was to explore which books are considered interesting or not worth reading.
+    </p>
+    <p>
+        This project began as a bootcamp exercise to deepen our understanding of full stack development. After completing the course, I decided to personalize it by adding several features:
+    </p>
+    <ul class="list-disc pl-5">
+        <li>Adding books with author names and page numbers.</li>
+        <li>Editing book details to indicate whether they are must-reads.</li>
+        <li>A delete button, secured with a password, ensuring only authorized users can delete entries.</li>
+    </ul>
+    <p>
+        Throughout this journey, I encountered and overcame challenges, such as posting the latest book to the top of the list and implementing a secure password feature for deletions.
+    </p>
+    <p><strong>Technologies Used:</strong></p>
+    <ul class="list-disc pl-5">
+        <li>Frontend: React, TypeScript, CSS</li>
+        <li>Backend: Node.js, Knex, SQLite</li>
+    </ul>
+    <p>
+        I learned a lot during the development and expansion of this project, enhancing my skills and gaining valuable experience in full stack development.
+    </p>
+</section>
+</Layout>
