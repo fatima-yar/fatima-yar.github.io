@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Githublink from '../components/UI/Githublink.astro';
 import { Icon } from 'astro-icon/components'
 import NavBar from '../components/NavBar.astro';
+import Project1Text from '../components/UI/Project1Text.astro';
 
 
 
@@ -12,29 +13,10 @@ import NavBar from '../components/NavBar.astro';
   <NavBar/>
   <section class="text-lightGrey flex flex-col items-center justify-center min-h-screen text-center pt-40">
     <h1 class="text-6xl font-audiowide text-lightBlue pb-10 ">Universal Book Collection</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eeJ87LchKxc?si=aUCD8w-bvSEIVQ8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mt-8"></iframe>
-    <div class="text-left lg:text-xl ">
-      <p class="text-3xl pt-10 pb-10"><strong>Project Description:</strong></p>
-    <p class="max-w-5xl pb-2">
-        Universal Book Collection is a platform designed for everyone to share and add their recently read books. I have plan to invite family and friends to contribute by adding the books they've rea, after I deploy my project. The idea was to explore which books are considered interesting or not worth reading.
-    </p>
-    <p class="max-w-2xl pb-4">
-        This project began as a bootcamp exercise to deepen our understanding of full stack development. After completing the course, I decided to personalize it by adding several features:
-    </p>
-    <ul class="list-disc pl-20 text-left max-w-2xl pb-4">
-        <li>Adding books with author names and page numbers.</li>
-        <li>Editing book details to indicate whether they are must-reads.</li>
-        <li>A delete button, secured with a password, ensuring only authorized users can delete entries.</li>
-    </ul>
-
-    <p class="text-2xl pb-4"><strong>Technologies Used:</strong></p>
-    <ul class="list-disc pl-5 text-left max-w-2xl pb-4">
-        <li>Frontend: React, TypeScript, CSS</li>
-        <li>Backend: Node.js, Knex, SQLite</li>
-    </ul>
-    <p class="max-w-2xl ">
-        I learned a lot during the development and expansion of this project, enhancing my skills and gaining valuable experience in full stack development.
-    </p>
+    <div class="max-w-full aspect-w-16 aspect-h-9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eeJ87LchKxc?si=uXu18vX6V5eco5PV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+   <Project1Text/>
   </div>
   <a class="flex flex-col items-center p-1 bg-slate-300 w-[20%] rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300" href="https://github.com/fatima-yar/my-fullstack-collection">
     <Icon name="github" class="text-8xl text-black"/>

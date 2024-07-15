@@ -33,7 +33,7 @@ export default {
     },
   },
   plugins: [
-    require('tailwind-hamburgers'),
+    require('tailwind-hamburgers', '@tailwindcss/aspect-ratio'),
 
     function ({ addUtilities }) {
       addUtilities(

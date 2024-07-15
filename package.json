@@ -23,6 +23,7 @@
     "typescript": "^5.5.3"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "astro-compress": "2.2.28"
   }
 }
