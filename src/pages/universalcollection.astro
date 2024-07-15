@@ -1,45 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-import NavBarButtons from '../components/UI/NavBarButtons.astro';
-import Title from '../components/UI/Title.astro'
-import HeroBox from '../components/HeroBox.astro';
-import Intro from '../components/Intro.astro';
+import Githublink from '../components/UI/Githublink.astro';
+import { Icon } from 'astro-icon/components'
 import NavBar from '../components/NavBar.astro';
-import AboutMe from '../components/AboutMe.astro'
-import Portfolio from '../components/Portfolio.astro';
-import ContactForm from '../components/ContactForm.astro';
 
 
 
 
 ---
-
 <Layout title="Universal Book Collection">
-	<section class="text-lightGrey">
-    <h2>Universal Book Collection</h2>
-    <p><strong>Project Description:</strong></p>
-    <p>
-        Universal Book Collection is a platform designed for everyone to share and add their recently read books. Initially, I invited family and friends to contribute by adding the books they've read. The idea was to explore which books are considered interesting or not worth reading.
+  <NavBar/>
+  <section class="text-lightGrey flex flex-col items-center justify-center min-h-screen text-center pt-40">
+    <h1 class="text-6xl font-audiowide text-lightBlue pb-10 ">Universal Book Collection</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eeJ87LchKxc?si=aUCD8w-bvSEIVQ8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mt-8"></iframe>
+    <div class="text-left lg:text-xl ">
+      <p class="text-3xl pt-10 pb-10"><strong>Project Description:</strong></p>
+    <p class="max-w-5xl pb-2">
+        Universal Book Collection is a platform designed for everyone to share and add their recently read books. I have plan to invite family and friends to contribute by adding the books they've rea, after I deploy my project. The idea was to explore which books are considered interesting or not worth reading.
     </p>
-    <p>
+    <p class="max-w-2xl pb-4">
         This project began as a bootcamp exercise to deepen our understanding of full stack development. After completing the course, I decided to personalize it by adding several features:
     </p>
-    <ul class="list-disc pl-5">
+    <ul class="list-disc pl-20 text-left max-w-2xl pb-4">
         <li>Adding books with author names and page numbers.</li>
         <li>Editing book details to indicate whether they are must-reads.</li>
         <li>A delete button, secured with a password, ensuring only authorized users can delete entries.</li>
     </ul>
-    <p>
-        Throughout this journey, I encountered and overcame challenges, such as posting the latest book to the top of the list and implementing a secure password feature for deletions.
-    </p>
-    <p><strong>Technologies Used:</strong></p>
-    <ul class="list-disc pl-5">
+
+    <p class="text-2xl pb-4"><strong>Technologies Used:</strong></p>
+    <ul class="list-disc pl-5 text-left max-w-2xl pb-4">
         <li>Frontend: React, TypeScript, CSS</li>
         <li>Backend: Node.js, Knex, SQLite</li>
     </ul>
-    <p>
+    <p class="max-w-2xl ">
         I learned a lot during the development and expansion of this project, enhancing my skills and gaining valuable experience in full stack development.
     </p>
-</section>
+  </div>
+  <a class="flex flex-col items-center p-1 bg-slate-300 w-[20%] rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300" href="https://github.com/fatima-yar/my-fullstack-collection">
+    <Icon name="github" class="text-8xl text-black"/>
+    <code class="text-center text-black lg:text-3xl">&lt;/&gt;</code>
+
+    <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
+  </a>
+  </section>
 </Layout>
