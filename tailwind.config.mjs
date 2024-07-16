@@ -29,6 +29,7 @@ export default {
         35: '135px',
         te: '720px',
         project: '375px',
+        youtube: '56.25%',
       },
     },
   },
