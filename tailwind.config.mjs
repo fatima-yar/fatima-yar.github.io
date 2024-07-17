@@ -28,7 +28,7 @@ export default {
         55: '55%',
         35: '135px',
         te: '720px',
-        project: '375px',
+        project: '80%',
         youtube: '56.25%',
       },
     },
