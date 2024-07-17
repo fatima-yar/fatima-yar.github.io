@@ -7,12 +7,12 @@ import EmailBtn from "./UI/EmailBtn.astro"
 const { id } = Astro.props;
 ---
 
-<div id={id} class="pt-10">
+<div id={id} class="pt-10 pl-8 lg:pl-0">
 <div class="text-lightBlue text-3xl flex justify-center">Contact Me</div>
 <div class="text-lightGrey flex justify-center pt-8">What to get in touch? Here are the ways you can reach out!</div>
-<div class="grid lg:grid-cols-2 md:grid-cols-2 lg:gap-8 gap-4 w-[50%] mx-auto pt-10 pb-16">
+<div class="grid lg:grid-cols-3 md:grid-cols-3 lg:gap-8 gap-4 w-[50%] mx-auto pt-10 pb-16">
   <EmailBtn/>
- <PhoneBtn/>
+
 <GithubBtn/>
 <LinkedinBtn/>
 
