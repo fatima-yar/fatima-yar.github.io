@@ -7,21 +7,19 @@ import EmailBtn from "./UI/EmailBtn.astro"
 const { id } = Astro.props;
 ---
 
-<div id={id} class="pt-10 pl-8 lg:pl-0">
-<div class="text-lightBlue text-3xl flex justify-center">Contact Me</div>
-<div class="text-lightGrey flex justify-center pt-8">What to get in touch? Here are the ways you can reach out!</div>
-<div class="grid lg:grid-cols-3 md:grid-cols-3 lg:gap-8 gap-4 w-[50%] mx-auto pt-10 pb-16">
-  <EmailBtn/>
+<div id={id} class="pt-10 pl-8 pr-8">
+  <div class="text-lightBlue text-3xl flex justify-center">Contact Me</div>
+  <div class="text-lightGrey flex justify-center pt-8">Want to get in touch? Here are the ways you can reach out!</div>
 
-<GithubBtn/>
-<LinkedinBtn/>
-
-    
-        
+  <div class="flex justify-center">
+    <div class="grid grid-cols-3 gap-1 text-lightGrey pt-10 pb-10 w-80">
+      <div class="flex justify-center items-center"><EmailBtn/></div>
+      <div class="flex justify-center items-center"><GithubBtn/></div>
+      <div class="flex justify-center items-center"><LinkedinBtn/></div>
+    </div>
+  </div>
 </div>
 
-
-</div>
 
 <div class="">
 <iframe style="border:none;width:100%;" id="contact-form-1tzlrv" src="https://opnform.com/forms/contact-form-1tzlrv"></iframe><script type="text/javascript" onload="initEmbed('contact-form-1tzlrv')" src="https://opnform.com/widgets/iframe.min.js"></script>
