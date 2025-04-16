@@ -1,6 +1,8 @@
 
 ---
 import { Icon } from 'astro-icon/components'
+const icons= ['astro','tailwindicon','html5','js','nodeicon','figma','canva'
+]
 ---
 
 
@@ -16,34 +18,12 @@ import { Icon } from 'astro-icon/components'
 <div class="text-lightGrey pt-2 text-lg">
   Hair Salon 
 </div>
-<div class="flex p-2 justify-center ">
-  <div class="p-1">
-  <Icon name="astro"  class=" text-2xl text-lightGrey"/>
-</div>
-<div class="p-1">
-  <Icon name="tailwindicon"  class=" text-2xl text-lightGrey"/>
-</div>
-<div class="p-1">
-  <Icon name="html5" class=" text-2xl"/>
-</div>
-<div class="p-1">
-  <Icon name="js" class=" text-2xl"/>
-</div>
-<!-- <div class="p-1">
-  <Icon name="ubento" class=" text-2xl"/>
-</div> -->
-<div class="p-1">
-  <Icon name="nodeicon" class=" text-2xl"/>
-</div>
-<div class="p-1">
-  <Icon name="figma" class=" text-2xl" />
-</div>
-<div class="p-1">
-  <Icon name="canva" class=" text-2xl" />
-</div>
 
-
-
-
-
+<div class="flex p-2 justify-center">
+  {icons.map((icon)=>(
+    <div class="p-1">
+      <Icon name={icon} class="text-2xl text-lightGrey"/>
+    </div>
+  ))}
+</div>
 </div>
