@@ -1,7 +1,7 @@
 
 ---
 import { Icon } from 'astro-icon/components'
-const icons=['tsicon','html5'
+const icons=['tsicon','html5','reacticon','cssicon','nodeicon','knexicon','sqliteicon'
 ]
 ---
 
@@ -19,35 +19,12 @@ const icons=['tsicon','html5'
   Universal Book Collection
 </div>
 
-
 <div class="flex p-2 justify-center ">
-  <div class="p-1">
-  <Icon name="tsicon"  class=" text-2xl text-lightGrey"/>
+  {icons.map((icon)=>(
+    <div class = "p-1">
+      <Icon name={icon} class="text-2xl text-lightGrey"/>
+    </div>
+  ))}
 </div>
-<div class="p-1">
-  <Icon name="html5"  class=" text-2xl text-lightGrey"/>
-</div>
-<div class="p-1">
-  <Icon name="reacticon" class=" text-2xl"/>
-</div>
-<div class="p-1">
-  <Icon name="cssicon" class=" text-2xl"/>
-</div>
-<!-- <div class="p-1">
-  <Icon name="ubento" class=" text-2xl"/>
-</div> -->
-<div class="p-1">
-  <Icon name="nodeicon" class=" text-2xl"/>
-</div>
-<div class="p-1">
-  <Icon name="knexicon" class=" text-2xl"/>
-</div>
-<div class="p-1">
-  <Icon name="sqliteicon" class=" text-2xl" />
-</div>
-</a>
-
-
-
 
 </div>
