@@ -66,6 +66,10 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        scrollFadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(50px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-out forwards',
@@ -77,6 +81,7 @@ export default {
         zoomIn: 'zoomIn 0.8s ease-out forwards',
         spinSlow: 'spinSlow 3s linear infinite',
         spinOnce: 'spinOnce 1s ease-in-out',
+        scrollFadeIn: 'scrollFadeIn 1s ease-out forwards',
       },
     },
   },

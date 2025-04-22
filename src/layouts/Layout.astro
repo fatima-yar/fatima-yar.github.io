@@ -28,13 +28,40 @@ import { ClientRouter } from 'astro:transitions'
 <ClientRouter/>
 	</head>
 	<body class="bg-darkBlue w-full">
-		<slot />
+    <div class="animate-fadeIn transition-opacity duration-500">
+      <slot />
+    </div>
+    <script src="./scroll.js"></script>
 	</body>
 </html>
 
 <style>
-   html {
---scroll-behavior: smooth!important;
-scroll-behavior: smooth!important;
-} 
-</style>
+  /* Smooth scroll for anchor links */
+  html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+  }
+  
+  /* Page transition styles */
+  .page-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  </style>

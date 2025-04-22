@@ -5,6 +5,9 @@ import compress from 'astro-compress'
 
 // https://astro.build/config
 export default defineConfig({
+  experimental: {
+    transitions: true,
+  },
   integrations: [
     tailwind(),
     icon(),
