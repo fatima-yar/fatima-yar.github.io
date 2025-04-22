@@ -2,39 +2,31 @@
 interface Props {
 	title: string;
 }
-
-import { ViewTransitions } from 'astro:transitions'
 ---
 
 <!doctype html>
 <html lang="en">
-	<head >
-  <!-- Added fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Lilita+One&display=swap" rel="stylesheet">
+  <head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Lilita+One&family=Audiowide&display=swap" rel="stylesheet" />
 
-
-		<meta charset="UTF-8" />
-		<meta name="description" content="Fatima's Portfolio" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="./logoF.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Fatima</title>
-<ViewTransitions/>
-	</head>
-	<body class="bg-darkBlue w-full">
-		<slot />
-	</body>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Fatima's Portfolio" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="./logoF.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Fatima</title>
+  </head>
+  <body class="bg-darkBlue w-full">
+    <slot />
+  </body>
 </html>
 
 <style>
-   html {
---scroll-behavior: smooth!important;
-scroll-behavior: smooth!important;
-} 
+  html {
+    scroll-behavior: smooth !important;
+  }
 </style>
