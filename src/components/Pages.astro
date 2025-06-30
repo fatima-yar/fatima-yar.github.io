@@ -2,11 +2,45 @@
 import { Icon } from 'astro-icon/components'
 import Layout from '../layouts/Layout.astro'
 import NavBar from './NavBar.astro';
-const { title, videoSrc, githubHref, githubLabel } = Astro.props;
+const { title, videoSrc, githubHref,  description,} = Astro.props;
 ---
-<Layout title={title}/>
+<Layout title={title}>
 <NavBar/>
   <div class="flex justify-center items-center pt-10">
 <!-- TITLE -->
-    <h1 class="lg:text-6xl text-2xl   text-center font-audiowide p-4 text-lightBlue pb-20">{title}<h1>
+    <h1 class="lg:text-6xl text-2xl text-center font-audiowide p-4 text-lightBlue pb-20">{title}<h1>
+
+
 </div>
+
+<!-- YouTube -->
+<div style="  margin: auto; max-width: 600px;" class="p-4">
+    <div style=" position: relative;
+    height: 0;
+    padding-bottom: 56.25%;">
+      <iframe style="    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;" width="560" height="315" src={videoSrc} title="YouTube video player" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Dynamic content (the sections) -->
+  <slot />
+
+
+<!--  -->
+Github
+
+    <div class="flex justify-center items-center ">
+  <a class="flex flex-col items-center p-1 bg-slate-300  rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300 w-full max-w-sm" href={githubHref}
+    target="_blank"
+  rel="noopener noreferrer">
+    <Icon name="Github" class="lg:text-8xl text-5xl text-black"/>
+    <code class="text-center text-black lg:text-3xl">&lt;/&gt;</code>
+
+    <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
+  </a>
+</div>
+</Layout>

@@ -1,0 +1,14 @@
+---
+const { headline } = Astro.props
+---
+<section class="text-lightGrey flex flex-col items-center justify-center px-4">
+  <div class="w-full max-w-3xl p-8 text-left">
+    {headline && (
+      <h2 class="text-3xl pb-6 pt-10 font-bold">{headline}</h2>
+    )}
+    <div class="[&>*]:pb-4 prose prose-invert">
+      <slot />
+    </div>
+  </div>
+</section>
+
