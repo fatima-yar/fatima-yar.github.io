@@ -1,9 +1,11 @@
 ---
 import { Icon } from 'astro-icon/components'
-
+import Layout from '../layouts/Layout.astro'
+import NavBar from './NavBar.astro';
 const { title, videoSrc, githubHref, githubLabel } = Astro.props;
 ---
-
+<Layout title={title}/>
+<NavBar/>
   <div class="flex justify-center items-center pt-10">
 <!-- TITLE -->
     <h1 class="lg:text-6xl text-2xl   text-center font-audiowide p-4 text-lightBlue pb-20">{title}<h1>
