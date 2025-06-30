@@ -1,4 +1,4 @@
----
+<!-- ---
 import Layout from '../layouts/Layout.astro';
 import Githublink from '../components/UI/Githublink.astro';
 import { Icon } from 'astro-icon/components'
@@ -36,4 +36,58 @@ import Project4Text from '../components/UI/Project4Text.astro';
     <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
   </a>
 </div>
-</Layout>
+</Layout> -->
+---
+import Pages from "../components/Pages.astro"
+import Section from "../components/UI/Section.astro"
+---
+<Pages
+  title="Code Quest"
+  videoSrc="https://www.youtube.com/embed/OhsnSv1iTFc?si=Xw0TNslXG1LK2o6I"
+  githubHref="https://github.com/fatima-yar/CodeQuest"
+>
+<div>
+<Section headline="Project Description">
+    <p>
+Code Quest was one of my group projects at Dev Academy. Our goal was to create a quiz application to deepen our knowledge of both backend and frontend development while delivering a user-friendly experience for junior developers to learn through play.
+    </p>
+    <p>These are the technics we have used in our project:</p>
+    <ul class="list-disc pl-10 pb-4">
+        <li><strong>SQLite3 </strong>was used to store the quiz questions and answers. The database schema included tables for questions and their corresponding answers.</li>
+        <li><strong>Knex </strong>was used to interact with the SQLite3 database. It helped in writing and executing SQL queries to manage the quiz data.</li>
+        <li><strong>React & Typescript</strong>was used to create the interactive user interface for the quiz application. Components were developed to display questions, manage user interactions, and update the UI based on user actions.</li>
+        <li><strong>CSS </strong>was used for the styling.</li>
+      </ul>
+      <p>We designed the backend database to store quiz questions, with each entry containing one correct answer and three incorrect answers. We ensured that the correct answer was always the first element in the array to simplify handling it on the frontend. We also implemented a shuffle function to randomize the order of the options before displaying them on the screen.</p>
+      <p>I enjoyed this project because it was both fun and challenging. Working on features like displaying correct answers with a green background and incorrect answers with a red background, and managing these states in React, was particularly insightful.</p>
+  </Section>
+
+<Section headline="My contribution:">
+<p>As part of the group, my contributions included:</p>
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>FrontEnd: </strong>Collaborated in developing the frontend using React and CSS, ensuring a smooth user experience and an intuitive interface.</li>
+
+        <li><strong>Idea Implementation: </strong>Contributed to the idea of structuring the quiz. To avoid predictability, I implemented a shuffle function to randomize the options before displaying them.  
+        </li>  
+      </ul>
+            <p>After graduation, I decided to update the app by implementing new features:</p>
+                  <ul class="list-disc pl-10 pb-4">
+      <li><strong>Score Counter Feature: </strong>Added a new scoring feature that awards +5 points for correct answers and deducts 2 points for incorrect answers, enhancing the quiz experience.</li>
+      <li><strong>Landing Page and Routing: </strong>Developed a conditional landing page that asks for the user's name and prints the name on the test page.</li>
+      <li><strong>Tailwind CSS: </strong>Installed and utilized Tailwind CSS to completely redesign and modernize the app’s styling.</li>
+      <li><strong>Celebration Function: </strong>Created a celebration function to add a fun element upon completion of the quiz, making the user experience more enjoyable.</li>
+    </ul>
+</Section>
+      <Section headline="Future implementation:">
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>Question Management: </strong>Adding functionality to allow users to add new questions, as well as edit or delete existing questions, to enhance content flexibility and customization.</li>
+        <li><strong>User Authentication: </strong> Implementing user authentication to enable personalized experiences and secure access to question management features.</li>
+        <li><strong>Question Categories: </strong>Introducing categories or tags for questions to organize them into different themes or difficulty levels, improving the quiz's usability and variety.</li>
+        <li><strong>Celebration Function: </strong>Created a celebration function to add a fun element upon completion of the quiz, making the user experience more enjoyable.</li>
+      </ul>
+      <p>These contributions reflect my ability to work effectively within a team and independently, showcasing my skills in frontend development and my commitment to continuous improvement.</p>
+      </Section>
+      </div>
+
+
+</Pages>

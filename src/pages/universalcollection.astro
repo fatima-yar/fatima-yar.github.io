@@ -1,41 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Githublink from '../components/UI/Githublink.astro';
-import { Icon } from 'astro-icon/components'
-import NavBar from '../components/NavBar.astro';
-import Project1Text from '../components/UI/Project1Text.astro';
-
-
-
-
+import Pages from "../components/Pages.astro"
+import Section from "../components/UI/Section.astro"
 ---
-<Layout title="Universal Book Collection">
-  <NavBar/>
-  <div class="flex justify-center items-center pt-10">
-    <h1 class="lg:text-6xl text-2xl   text-center font-audiowide p-4 text-lightBlue pb-20">Universal Book Collection</h1>
-  </div>
-  <div style="  margin: auto; max-width: 600px;" class="p-4">
-    <div style=" position: relative;
-    height: 0;
-    padding-bottom: 56.25%;">
-      <iframe style="    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/RLnBwQFVzak?si=BpNDO2uqU_SzDLcf" allowfullscreen></iframe>
-    </div>
-  </div>
-  <section class="text-lightGrey flex flex-col items-center justify-center  text-center ">
-
-   <Project1Text/>
+<Pages
+  title="Universal Book Collection"
+  videoSrc="https://www.youtube.com/embed/RLnBwQFVzak?si=BpNDO2uqU_SzDLcf"
+  githubHref="https://github.com/fatima-yar/my-fullstack-collection"
+>
+<div>
+<Section headline="Project Description">
+    <p>
+   Universal Book Collection is a platform designed for everyone to share and add their recently read books. I have plan to invite family and friends to contribute by adding the books they've read, once deployed. The idea was to explore which books are considered interesting or not worth reading.</p>
+<p>This project began as a bootcamp exercise to deepen our understanding of full stack development. After completing the course, I decided to personalize it to create a user-friendly platform where users could:</p>
+<ul class="list-disc pl-10 ">
+        <li>Add recently read books with the title, author, number of pages, and their name to track who suggested each book.</li>
+        <li>Ensure the number of pages field accepts only numeric input.</li>
+        <li>Edit book entries to mark whether the book is a "must read" or not.</li>
+        <li>Implement password-protected deletion to remove irrelevant books securely.</li>
+      </ul>
+       <p class="pb-4 pt-4 text-xl">
+        <strong>To achieve this:</strong>
+      </p>
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>Frontend Development:</strong> Used React and TypeScript for a responsive, intuitive UI, styling with CSS.</li>
+        <li><strong>Backend Development:</strong> Employed Node.js, Knex, and SQLite3 for robust data management.</li>  
+        <li><strong>User Interaction:</strong> Designed forms for seamless submission and editing of book details.</li>
+        <li><strong>Security Measures:</strong> Integrated password protection for book deletion, ensuring only authorized users could remove entries.</li>
+      </ul>
+ <p>    This project shows my commitment to creating useful digital solutions and using my skills in both frontend and backend development.</p>
  
-  </section>
-  <div class="flex justify-center items-center ">
-  <a class="flex flex-col items-center p-1 bg-slate-300  rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300 w-full max-w-sm" href="https://github.com/fatima-yar/my-fullstack-collection">
-    <Icon name="Github" class="lg:text-8xl text-5xl text-black"/>
-    <code class="text-center text-black lg:text-3xl">&lt;/&gt;</code>
+  </Section>
 
-    <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
-  </a>
 </div>
-</Layout>
+
+
+</Pages>
