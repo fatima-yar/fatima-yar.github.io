@@ -1,39 +1,89 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Githublink from '../components/UI/Githublink.astro';
-import { Icon } from 'astro-icon/components'
-import NavBar from '../components/NavBar.astro';
-import Project6Text from '../components/UI/Project6Text.astro';
-
-
+import Pages from "../components/Pages.astro"
+import Section from "../components/UI/Section.astro"
 ---
-<Layout title="Universal Book Collection">
-  <NavBar/>
-  <div class="flex justify-center items-center pt-10">
-    <h1 class="lg:text-6xl text-2xl   text-center font-audiowide p-4 text-lightBlue pb-20">Dream Catchers World Wide</h1>
-  </div>
-  <div style="  margin: auto; max-width: 600px;" class="p-4">
-    <div style=" position: relative;
-    height: 0;
-    padding-bottom: 56.25%;">
-      <iframe style="    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/KOX6PKhet5k?si=Wh3t5kiCOAf7fuNB" title="YouTube video player" allowfullscreen></iframe>
-    </div>
-  </div>
-  <section class="text-lightGrey flex flex-col items-center justify-center  text-center "></section>
+<Pages
+  title="Dream Catchers World Wide"
+  videoSrc="https://www.youtube.com/embed/KOX6PKhet5k?si=Wh3t5kiCOAf7fuNB"
+  githubHref="https://github.com/dream-catchers-worldwide/DCW-app"
+>
+<div>
+<Section headline="Project Description">
+    <p>
+<span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://www.dreamcatchersww.com/">DreamCatchers WorldWide</a></span> is a non-profit organization based in Auckland and London, dedicated to supporting vulnerable communities through education and essential services.</p>
+      <p>The founder recently decided to redesign their website, and I was fortunate to be selected for the project through <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://volunteeringauckland.org.nz/">Volunteers Auckland</a></span>.
+    </p>
+  </Section>
 
-   <Project6Text/>
- 
-  </section>
-  <div class="flex justify-center items-center ">
-  <a class="flex flex-col items-center p-1 bg-slate-300  rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300 w-full max-w-sm" href="https://github.com/dream-catchers-worldwide/DCW-app">
-    <Icon name="github" class="lg:text-8xl text-5xl text-black"/>
-    <code class="text-center text-black lg:text-3xl">&lt;/&gt;</code>
+<Section headline="My contribution:">
+<ul class="list-disc pl-10 pb-4">
+        <li>Designed a clean, accessible, and user-friendly interface using <strong><span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://www.Figma.com/design/yQEtFg3OxRPX1zXSfl9nZr/Untitled?node-id=0-1&t=E0q9dY5HJCx9Zr0k-1">Figma</a></span></strong></li>
+        <li>Developed the entire front end with <strong>React</strong> and <strong>Next.js</strong>, building dynamic and responsive pages</li>
+        <li>Styled components with <strong>Tailwind CSS</strong> to ensure consistency and mobile responsiveness</li>
+        <li>Built a custom content management experience using <strong>Strapi</strong>, allowing the founder to easily update text and images</li>
+        <li>Created reusable components for scalability and faster development</li>
+        <li>Deployed the backend on <strong>Strapi Cloud</strong> and the frontend on <strong>Vercel</strong></li>
+        <li>Used <strong>Git</strong> and <strong>GitHub</strong> for version control</li>
+        <li>Managed <strong>domain settings</strong> and connected custom domains to the live site</li>
+        <li>Set up automated deployment workflows using <strong>webhooks</strong>, so publishing in Strapi triggers a live update via Vercel</li>
+      </ul>
+</Section>
+      <Section headline="Key Features:">
+<ul class="list-disc pl-10 pb-4">
+        <li>Fully responsive design</li>
+        <li>Country-based toggle for NZ and UK-specific content</li>
+        <li>User-friendly CMS tailored for non-technical admins</li>
+        <li>Reusable components for scalability and maintainability</li>
+        <li>Webhook integration for automatic content deployment</li>
+      </ul>
 
-    <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
-  </a>
+      </Section>
+      <Section headline="Technology Stack:">
+         <p class=" text-lg">Design:</p>
+
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>Figma: </strong>UI/UX Design.</li>
+
+      </ul>
+      <p class="text-lg">Frontend Development:</p>
+
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>React & Next.js: </strong> Frontend Frameworks</li>
+       <li><strong>Tailwind CSS: </strong>Ensured modern and consistent styling.
+       </li>
+      </ul>
+
+      <p class="text-lg">Backend Development:</p>
+
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>Strapi: </strong> Headless CMS</li>
+       <li><strong>Tailwind CSS: </strong>Ensured modern and consistent styling.
+       </li>
+      </ul>
+      <p class="text-lg">Deployment & Hosting:</p>
+
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>Vercel: </strong>Frontend Hosting Platform</li>
+       <li><strong>Strapi Cloud: </strong>Backend Hosting & Deployment
+       </li>
+      <li><strong>Webhooks: </strong>CI/CD Automation (triggering deployments)
+       </li>
+      <li><strong>Version Control: </strong>Source Control and Collaboration
+       </li>
+      </ul>
+</p>
+      </Section>
+      <Section headline="Challenges & Learnings:">
+  <p >I enjoy solving problems and learning through real-world projects, and this one offered plenty of valuable lessons.</p>
+  <p >This was my first time working with a CMS, so I learned Strapi step by step through hands-on practice and a helpful <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://www.youtube.com/watch?v=Q-cPtlYG1cY">YouTube tutorial</a></span> . Gaining confidence in setting up content types, writing custom queries, and managing permissions was a major achievement for me.</p>
+</Section>
+
+      <Section headline="Outcome:">
+  <p >The project was a success—fully designed, developed, and deployed with all key features in place. The founder was thrilled with the clean design, the regional toggle between NZ and UK content, and the ease of updating the site through the CMS.</p>
+   <p class="pb-6"> The <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://www.dreamcatchersww.com/">website</a></span> is live now.</p>
+
+</Section>
 </div>
-</Layout>
+
+
+</Pages>

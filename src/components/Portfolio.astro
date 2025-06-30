@@ -1,13 +1,5 @@
 ---
-import Project1 from "../components/UI/Project1.astro"
-import Project2 from "../components/UI/Project2.astro"
-import Project from "../components/UI/Project.astro"
-import Project3 from "../components/UI/Project3.astro"
-import Project4 from "./UI/Project4.astro";
-import Project5 from "../components/UI/Project5.astro"
-import Project6 from "../components/UI/Project6.astro"
-
-
+import ProjectCard from "./UI/ProjectCard.astro"
 const { id } = Astro.props;
 ---
 
@@ -17,12 +9,42 @@ const { id } = Astro.props;
  Projects
   </div>
   <div class="grid lg:grid-cols-3 grid-cols-1 pt-10 place-items-center">
-  <Project6/>
-  <Project2/>
-  <Project3/>
-  <Project1/>
-  <Project4/>
-  <Project5/>
+<ProjectCard
+title="  Dream Catchers World Wide"
+imageSrc="./dreamcatchers.jpg"
+projectLink="/dreamcatchers"
+icons={['Nextjs', 'JavaScript', 'React', 'TailwindCSS', 'Figma', 'Strapi', 'Vercel', 'HTML5', 'Nodejs']}/>
+<ProjectCard
+title="BRDG"
+imageSrc="./brdgresponsive.jpg"
+projectLink="/brdg"
+icons={['TypeScript', 'HTML5', 'React', 'TailwindCSS', 'Nodejs', 'Knexjs', 'SQLite', 'Figma', 'Storybook']}/>
+<ProjectCard
+title="Hair Salon"
+imageSrc="./ImageHairCover.jpg"
+projectLink="/hairsalon"
+icons={['Astro','TailwindCSS','HTML5','JavaScript','Nodejs','Figma','Canva']}/>
+
+<ProjectCard
+title="Universal Book Collection"
+imageSrc="./Book-Responsive.jpg"
+projectLink="/universalcollection"
+icons={['TypeScript','HTML5','React','CSS','Nodejs','Knexjs','SQLite']}/>
+
+<ProjectCard
+title="Code Quest"
+imageSrc="./codequest.jpg"
+projectLink="/codequest"
+icons={['React','TypeScript','TailwindCSS','HTML5','Nodejs', 'SQLite', 'Knexjs']}/>
+
+
+<ProjectCard
+title="Commenting Service"
+imageSrc="./commentingService.jpg"
+projectLink="/commentingService"
+icons={['React', 'TypeScript', 'TailwindCSS', 'HTML5', 'Nodejs','SQLite','Knexjs']}/>
+
+
   </div>
 </div>
 

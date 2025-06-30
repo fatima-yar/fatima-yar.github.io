@@ -1,41 +1,53 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Githublink from '../components/UI/Githublink.astro';
-import { Icon } from 'astro-icon/components'
-import NavBar from '../components/NavBar.astro';
-import Project5Text from '../components/UI/Project5Text.astro';
-
-
-
-
+import Pages from "../components/Pages.astro"
+import Section from "../components/UI/Section.astro"
 ---
-<Layout title="Commenting Service">
-  <NavBar/>
-  <div class="flex justify-center items-center pt-10">
-    <h1 class="lg:text-6xl text-2xl   text-center font-audiowide p-4 text-lightBlue pb-20">Commenting Service</h1>
-  </div>
-  <div style="  margin: auto; max-width: 600px;" class="p-4">
-    <div style=" position: relative;
-    height: 0;
-    padding-bottom: 56.25%;">
-      <iframe style="    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/_6UUnPPVcEQ?si=asCKPD1MBRKIgN8B" allowfullscreen></iframe>
-    </div>
-  </div>
-  <section class="text-lightGrey flex flex-col items-center justify-center  text-center ">
+<Pages
+  title="Commenting Service"
+  videoSrc="https://www.youtube.com/embed/_6UUnPPVcEQ?si=asCKPD1MBRKIgN8B"
+  githubHref="https://github.com/fatima-yar/commentbackend"
+>
+<div>
+<Section headline="Project Description">
+    <p>
+<strong>Project Description:</strong></p>
+      <p class="pb-4">I developed a full-stack commenting service designed to seamlessly integrate with blog posts, enabling users to add, edit, delete, and reply to comments. This project was initially created to gain comprehensive experience in both frontend and backend development, this service is now successfully integrated into the <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="/brdg">BRDG</a></span> platform.
+    </p>
+  </Section>
 
-   <Project5Text/>
- 
-  </section>
-  <div class="flex justify-center items-center ">
-  <a class="flex flex-col items-center p-1 bg-slate-300  rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300 w-full max-w-sm" href="https://github.com/fatima-yar/commentbackend">
-    <Icon name="github" class="lg:text-8xl text-5xl text-black"/>
-    <code class="text-center text-black lg:text-3xl">&lt;/&gt;</code>
+<Section headline="Key Features:">
+<ul class="list-disc pl-10 pb-4">
+        <li><strong>User Interactions: </strong>Users can add new comments, edit or delete their own comments, and reply to others.</li>
+        <li><strong>Threaded Comments: </strong>Supports nested replies for organized discussions.</li>
+        <li><strong>Real-Time Updates: </strong>Utilizes React Query for efficient data fetching and synchronization.</li>
+        <li><strong>Dynamic Comment Count: </strong> Automatically updates the comment count with new additions.</li>
+        <li><strong>Robust Backend: </strong> Built with Node.js and a RESTful API, backed by a SQL database for persistent storage.</li>
+      </ul>
+      
+</Section>
+      <Section headline="Tech Stack:">
+  <p class=" pb-4 pt-0 pl-4 text-lg">Backend Development:</p>
+  <ul class="list-disc pl-10 pb-4">
+        <li><strong>Node.js & Expressjs: </strong>Developed a RESTful API for efficient CRUD operations.</li>
+        <li><strong>SQLite3 & Knex.js: </strong>Implemented a database with a schema designed for nested comment threads.
+       </li>
+      </ul>
+      <p class="pb-4 pt-4 text-lg pl-4 ">Frontend Development:</p>
 
-    <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
-  </a>
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>React & TypeScript: </strong>Created a responsive and user-friendly interface.</li>
+        <li><strong>State Management: </strong>Managed state using React’s context API and hooks.
+       </li>
+       <li><strong>Tailwind CSS: </strong>Ensured modern and consistent styling.
+       </li>
+      </ul>
+
+      </Section>
+      <Section>
+<p>  <p class="pb-4">I learned a lot about full-stack development while working on this project, and it added a useful commenting feature to the <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="/brdg">BRDG</a></span> platform.</p></p>
+      </Section>
+    
 </div>
-</Layout>
+
+
+</Pages>

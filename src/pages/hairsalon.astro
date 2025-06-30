@@ -1,39 +1,46 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Githublink from '../components/UI/Githublink.astro';
-import { Icon } from 'astro-icon/components'
-import NavBar from '../components/NavBar.astro';
-import Project3Text from '../components/UI/Project3Text.astro';
-
-
+import Pages from "../components/Pages.astro"
+import Section from "../components/UI/Section.astro"
 ---
-<Layout title="Universal Book Collection">
-  <NavBar/>
-  <div class="flex justify-center items-center pt-10">
-    <h1 class="lg:text-6xl text-2xl   text-center font-audiowide p-4 text-lightBlue pb-20">Hair Salon</h1>
-  </div>
-  <div style="  margin: auto; max-width: 600px;" class="p-4">
-    <div style=" position: relative;
-    height: 0;
-    padding-bottom: 56.25%;">
-      <iframe style="    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/f6n5flc4xxc?si=e3jvEAPEQTy8DSnz"  allowfullscreen></iframe>
-    </div>
-  </div>
-  <section class="text-lightGrey flex flex-col items-center justify-center  text-center "></section>
+<Pages
+  title="Hair Salon"
+  videoSrc="https://www.youtube.com/embed/f6n5flc4xxc?si=e3jvEAPEQTy8DSnz"
+  githubHref="https://github.com/fatima-yar/imagehair"
+>
+<div>
+<Section headline="Project Description:">
+<p >The hair salon website is a sleek and modern online presence, carefully crafted to showcase the salon's style, expertise, and services. With a responsive design and user-friendly interface, this website provides an exceptional experience for clients to explore, discover, and connect with the salon.</p>
+      
+      <p > Starting with client consultations, I contributed to designing the main page, portfolio page using JSON for showcasing salon works, and the about us page. We used <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://www.Figma.com/design/wqZ5bYiVh69Apop9lk6wiE/Image-Hair---V1?node-id=43-417&t=UifYyYsPrDxR7VeE-0">Figma</a></span> for initial designs and <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank" href="https://www.Canva.com/design/DAGKB5AuSTw/yTV9Y4Y7-rx7fTa-5HPC2g/edit?utm_content=DAGKB5AuSTw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva</a></span> to break down each component for implementation planning.</p></Section>
 
-   <Project3Text/>
- 
-  </section>
-  <div class="flex justify-center items-center ">
-  <a class="flex flex-col items-center p-1 bg-slate-300  rounded-lg mt-8 mb-8 hover:bg-gray-500 hover:scale-105 transition-all duration-300 w-full max-w-sm" href="https://github.com/fatima-yar/imagehair">
-    <Icon name="github" class="lg:text-8xl text-5xl text-black"/>
-    <code class="text-center text-black lg:text-3xl">&lt;/&gt;</code>
+<Section headline="Tech Stacks:">
+      <ul class="list-disc pl-10 ">
+        <li><strong>Astro: </strong>Selected for its exceptional performance advantages.</li>
+        <li><strong>Tailwind CSS: </strong> For responsive and elegant styling.</li>
+        <li><strong>JavaScript: </strong> For making the navigation bar responsive and converting it into a hamburger menu.</li>
+      </ul>
+</Section>
 
-    <p class="text-center text-black lg:text-xl">Click here to see the source code</p>
-  </a>
+<Section headline="Project Management:">
+   <p>We utilized GitHub for version control and <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank" href="https://github.com/users/fatima-yar/projects/1/views/1">GitHub Projects</a></span> for task management, organizing our workflow into manageable tickets to track progress effectively. We communicate in person and also through Discord.</p>
+</Section>
+<Section headline="My Contributions:">
+      <ul class="list-disc pl-10 pb-4">
+        <li><strong>Main Page: </strong>Developed the main page layout, including the header, footer, and an embedded Google Map.</li>
+        
+        <li><strong>Portfolio Page: </strong>Utilized JSON to populate the portfolio page with dummy data, showcasing the salon's works.
+       
+        </li>  
+       
+        <li><strong>About Us Page: </strong>Built and populated the about us page with placeholder content.</li>
+
+      </ul>
+</Section>
+<Section headline="Development Process:">
+<p > After configuring Astro and integrating Tailwind CSS, I transformed our design concepts into functional UI components, ensuring seamless integration and dynamic content delivery through JSON.</p>
+
+<p>At the end of this project, my aim was not only to create a functional and visually appealing website for a women-only fake hairdresser, but also to expand my skills by successfully learning and working with Astro, a platform I had heard about previously. I achieved my goal of implementing Astro effectively and creating a site that meets the needs of its intended users.</p>
+</Section>
+
 </div>
-</Layout>
+</Pages>
