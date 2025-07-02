@@ -1,5 +1,8 @@
 ---
 import Pages from "../components/Pages.astro"
+import BulletList from "../components/UI/BulletList.astro"
+import LinkText from "../components/UI/LinkText.astro"
+import Paragraph from "../components/UI/Paragraph.astro"
 import Section from "../components/UI/Section.astro"
 ---
 <Pages
@@ -7,41 +10,54 @@ import Section from "../components/UI/Section.astro"
   videoSrc="https://www.youtube.com/embed/f6n5flc4xxc?si=e3jvEAPEQTy8DSnz"
   githubHref="https://github.com/fatima-yar/imagehair"
 >
-<div>
-  <Section><p>Live site -  <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://imagehair.fatima.co.nz/">ImageHair</a></span> </p></Section>
+
+  <Section>
+   <Paragraph> Live site -  
+    <LinkText href="https://imagehair.fatima.co.nz">ImageHair</LinkText>
+   </Paragraph>
+  </Section>
+
 <Section headline="Project Description:">
-<p >The hair salon website is a sleek and modern online presence, carefully crafted to showcase the salon's style, expertise, and services. With a responsive design and user-friendly interface, this website provides an exceptional experience for clients to explore, discover, and connect with the salon.</p>
+  <Paragraph>
+  The hair salon website is a sleek and modern online presence, carefully crafted to showcase the salon's style, expertise, and services. With a responsive design and user-friendly interface, this website provides an exceptional experience for clients to explore, discover, and connect with the salon.
+  </Paragraph>
       
-      <p > Starting with client consultations, I contributed to designing the main page, portfolio page using JSON for showcasing salon works, and the about us page. We used <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank"href="https://www.Figma.com/design/wqZ5bYiVh69Apop9lk6wiE/Image-Hair---V1?node-id=43-417&t=UifYyYsPrDxR7VeE-0">Figma</a></span> for initial designs and <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank" href="https://www.Canva.com/design/DAGKB5AuSTw/yTV9Y4Y7-rx7fTa-5HPC2g/edit?utm_content=DAGKB5AuSTw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva</a></span> to break down each component for implementation planning.</p></Section>
+      <Paragraph> Starting with client consultations, I contributed to designing the main page, portfolio page using JSON for showcasing salon works, and the about us page. We used 
+        <LinkText href="https://www.Figma.com/design/wqZ5bYiVh69Apop9lk6wiE/Image-Hair---V1?node-id=43-417&t=UifYyYsPrDxR7VeE-0">Figma</LinkText>
+         for initial designs and 
+         <LinkText href="https://www.Canva.com/design/DAGKB5AuSTw/yTV9Y4Y7-rx7fTa-5HPC2g/edit?utm_content=DAGKB5AuSTw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva</LinkText>
+         to break down each component for implementation planning.
+  </Paragraph>
+      
+</Section>
 
 <Section headline="Tech Stacks:">
-      <ul class="list-disc pl-10 ">
+      <BulletList>
         <li><strong>Astro: </strong>Selected for its exceptional performance advantages.</li>
         <li><strong>Tailwind CSS: </strong> For responsive and elegant styling.</li>
         <li><strong>JavaScript: </strong> For making the navigation bar responsive and converting it into a hamburger menu.</li>
-      </ul>
+      </BulletList>
 </Section>
 
 <Section headline="Project Management:">
-   <p>We utilized GitHub for version control and <span class="text-lightBlue border-b border-lightBlue hover:border-gray-500"><a target="_blank" href="https://github.com/users/fatima-yar/projects/1/views/1">GitHub Projects</a></span> for task management, organizing our workflow into manageable tickets to track progress effectively. We communicate in person and also through Discord.</p>
+   <Paragraph> We utilized GitHub for version control and 
+    <LinkText href="https://github.com/users/fatima-yar/projects/1/views/1">GitHub Projects</LinkText>
+    for task management, organizing our workflow into manageable tickets to track progress effectively. We communicate in person and also through Discord.</Paragraph>
 </Section>
+
 <Section headline="My Contributions:">
-      <ul class="list-disc pl-10 pb-4">
+      <BulletList>
         <li><strong>Main Page: </strong>Developed the main page layout, including the header, footer, and an embedded Google Map.</li>
-        
         <li><strong>Portfolio Page: </strong>Utilized JSON to populate the portfolio page with dummy data, showcasing the salon's works.
-       
         </li>  
-       
         <li><strong>About Us Page: </strong>Built and populated the about us page with placeholder content.</li>
-
-      </ul>
+      </BulletList>
 </Section>
+
 <Section headline="Development Process:">
-<p > After configuring Astro and integrating Tailwind CSS, I transformed our design concepts into functional UI components, ensuring seamless integration and dynamic content delivery through JSON.</p>
+<Paragraph> After configuring Astro and integrating Tailwind CSS, I transformed our design concepts into functional UI components, ensuring seamless integration and dynamic content delivery through JSON.</Paragraph>
 
-<p>At the end of this project, my aim was not only to create a functional and visually appealing website for a women-only fake hairdresser, but also to expand my skills by successfully learning and working with Astro, a platform I had heard about previously. I achieved my goal of implementing Astro effectively and creating a site that meets the needs of its intended users.</p>
+<Paragraph>At the end of this project, my aim was not only to create a functional and visually appealing website for a women-only fake hairdresser, but also to expand my skills by successfully learning and working with Astro, a platform I had heard about previously. I achieved my goal of implementing Astro effectively and creating a site that meets the needs of its intended users.</Paragraph>
 </Section>
 
-</div>
 </Pages>
