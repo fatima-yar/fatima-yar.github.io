@@ -8,6 +8,7 @@ const { id } = Astro.props;
 
 ---
 
+
 <div id={id} class="pt-10 pl-8 pr-8">
   <div class="text-lightBlue text-3xl flex justify-center">Contact Me</div>
   <div class="text-lightGrey flex justify-center pt-8">Want to get in touch? Here are the ways you can reach out!</div>
@@ -20,12 +21,49 @@ const { id } = Astro.props;
     </div>
   </div>
 </div>
+<form
+  action="https://formspree.io/f/mqabjzar"
+  method="POST"
+  class="bg-darkBlue text-brightPink p-6 rounded-lg max-w-xl mx-auto space-y-4"
+>
+  <div class="flex flex-col">
+    <label for="name" class="mb-1">Name:</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      required
+      class="bg-darkGrey text-white rounded-md p-2 w-full border border-gray-600 focus:border-2 focus:border-brightPink focus:outline-none"
+    />
+  </div>
 
+  <div class="flex flex-col">
+    <label for="email" class="mb-1">Email:</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      required
+      class="bg-darkGrey text-white rounded-md p-2 w-full border border-gray-600 focus:border-2 focus:border-brightPink focus:outline-none"
+    />
+  </div>
 
-<div class="">
-<iframe style="border:none;width:100%;" id="contact-form-1tzlrv" src="https://opnform.com/forms/contact-form-1tzlrv"></iframe><script type="text/javascript" onload="initEmbed('contact-form-1tzlrv')" src="https://opnform.com/widgets/iframe.min.js"></script>
-</div>
+  <div class="flex flex-col">
+    <label for="message" class="mb-1">Message:</label>
+    <textarea
+      id="message"
+      name="message"
+      required
+      rows="5"
+      class="bg-darkGrey text-white rounded-md p-2 w-full border border-gray-600 focus:border-2 focus:border-brightPink focus:outline-none"
+    ></textarea>
+  </div>
 
-
-
+  <button
+    type="submit"
+    class="text-lightGrey bg-brightPink pl-6 pr-6 pt-2 pb-2 rounded-md hover:scale-105 transition-all duration-300"
+  >
+    Send
+  </button>
+</form>
 </div>
