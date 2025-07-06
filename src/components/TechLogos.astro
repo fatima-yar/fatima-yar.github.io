@@ -30,7 +30,10 @@ const icons = [
   <div class="relative w-full">
     <div class="flex w-fit animate-marquee gap-4 items-center">
       {icons.concat(icons).map((icon) => (
-        <div class="relative group flex items-center justify-center p-2">
+     <button 
+        class="group relative p-2 text-lightGrey hover:brightness-105 hover:scale-125 transition-all duration-300 animate-spinOnce"
+        aria-label={icon}
+      >
           <Icon
             name={icon}
             class={`text-3xl md:text-${icon === "Jenkins" ? "6xl" : "5xl"} text-lightGrey transition-transform duration-300 group-hover:scale-125`}
