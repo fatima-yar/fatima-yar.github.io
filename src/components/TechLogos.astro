@@ -57,10 +57,8 @@ const icons = [
         class="group relative p-2 text-lightGrey hover:brightness-105 hover:scale-125 transition-all duration-300 animate-spinOnce"
         aria-label={icon}
       >
-        <Icon 
-          name={icon} 
-          class={`text-${icon === "Jenkins" ? "6xl" : "5xl"} text-lightGrey`} 
-        />
+     
+className={`text-${icon === "Jenkins" ? "3xl" : "2xl"} sm:${icon === "Jenkins" ? "text-6xl" : "text-5xl"} text-lightGrey`}
 
         {/* Tooltip */}
         <span class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
