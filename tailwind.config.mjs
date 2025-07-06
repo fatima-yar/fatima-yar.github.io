@@ -57,7 +57,7 @@ export default {
         },
       },
       animation: {
-        marquee: 'marquee 40s linear infinite',
+        marquee: 'marquee 30s linear infinite',
         fadeIn: 'fadeIn 1s ease-out forwards',
         fadeUp: 'fadeUp 1s ease-out forwards',
         fadeScaleIn: 'fadeScaleIn 0.8s ease-out forwards',
