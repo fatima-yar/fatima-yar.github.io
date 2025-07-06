@@ -36,7 +36,12 @@ const icons = [
           aria-label={icon}
         >
          
-className={`text-${icon === "Jenkins" ? "3xl" : "2xl"} sm:${icon === "Jenkins" ? "text-6xl" : "text-5xl"} text-lightGrey`}
+
+<span
+  class={`text-${icon === "Jenkins" ? "3xl" : "2xl"} sm:${icon === "Jenkins" ? "text-6xl" : "text-5xl"} text-lightGrey`}
+>
+  {icon}
+</span>
 
 
           <span
