@@ -22,38 +22,27 @@ const icons = [
   "Docker",
   "PostgreSQL",
   "Nextjs",
-  'Strapi',
-  'Vercel'
+  "Strapi",
+  "Vercel",
 ];
 ---
-
-<div class="overflow-hidden py-10 px-8 md:px-20 my-8 lg:mx-80 mx-12">
+<div class="overflow-hidden px-8 md:px-20 my-8 lg:mx-60 mx-12">
   <div class="relative w-full">
     <div class="flex w-fit animate-marquee gap-4 items-center">
       {icons.concat(icons).map((icon) => (
-        <button
-          class="group relative p-2 bg-re text-lightGrey hover:brightness-105 hover:scale-125 transition-all duration-300"
-          aria-label={icon}
-        >
-         
-
-<Icon
-name={icon}
-  class={`text-${icon === "Jenkins" ? "3xl" : "2xl"} sm:${icon === "Jenkins" ? "text-6xl" : "text-5xl"} text-lightGrey`}
-/>
-
-
-
-
-
+        <div class="relative group flex items-center justify-center p-2">
+          <Icon
+            name={icon}
+            class={`text-3xl md:text-${icon === "Jenkins" ? "6xl" : "5xl"} text-lightGrey transition-transform duration-300 group-hover:scale-125`}
+            aria-label={icon}
+          />
           <span
-            class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            class="absolute bottom-0 translate-y-full left-1/2 -translate-x-1/2 rounded bg-darkGrey px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-50"
           >
             {icon}
           </span>
-        </button>
+        </div>
       ))}
     </div>
   </div>
 </div>
-
