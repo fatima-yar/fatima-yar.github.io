@@ -10,26 +10,11 @@ export default {
       scale: {
         105: '1.05',
       },
-      colors: {
-        darkBlue: '#141336',
-        lightGrey: '#EEEEEE',
-        brightPink: '#FF00D6',
-        dirtyPink: '#c27fbe',
-        darkGrey: '#252525',
-        purple: '#613896',
-        lightBlue: '#8CEAFF',
-      },
-      backgroundImage: {
-        gradientPink: 'linear-gradient(to right, #FF8FED, #D300B1)',
-      },
-      spacing: {
-        55: '55%',
-        35: '135px',
-        te: '720px',
-        project: '80%',
-        youtube: '56.25%',
-      },
       keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
@@ -72,6 +57,7 @@ export default {
         },
       },
       animation: {
+        marquee: 'marquee 40s linear infinite',
         fadeIn: 'fadeIn 1s ease-out forwards',
         fadeUp: 'fadeUp 1s ease-out forwards',
         fadeScaleIn: 'fadeScaleIn 0.8s ease-out forwards',
@@ -82,6 +68,25 @@ export default {
         spinSlow: 'spinSlow 3s linear infinite',
         spinOnce: 'spinOnce 1s ease-in-out',
         scrollFadeIn: 'scrollFadeIn 1s ease-out forwards',
+      },
+      colors: {
+        darkBlue: '#141336',
+        lightGrey: '#EEEEEE',
+        brightPink: '#FF00D6',
+        dirtyPink: '#c27fbe',
+        darkGrey: '#252525',
+        purple: '#613896',
+        lightBlue: '#8CEAFF',
+      },
+      backgroundImage: {
+        gradientPink: 'linear-gradient(to right, #FF8FED, #D300B1)',
+      },
+      spacing: {
+        55: '55%',
+        35: '135px',
+        te: '720px',
+        project: '80%',
+        youtube: '56.25%',
       },
     },
   },

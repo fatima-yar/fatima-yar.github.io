@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-
 const icons = [
   "TypeScript",
   "JavaScript",
@@ -28,7 +27,29 @@ const icons = [
 ];
 ---
 
-
+<div class="overflow-hidden px-8 md:px-20 my-8 lg:mx-60 mx-12">
+  <div class="relative w-full">
+    <div class="flex w-fit animate-marquee gap-4 items-center">
+      {icons.concat(icons).map((icon) => (
+        <button
+          class="group relative p-2 text-lightGrey hover:brightness-105 hover:scale-125 transition-all duration-300"
+          aria-label={icon}
+        >
+          <Icon
+            name={icon}
+            class={`text-${icon === "Jenkins" ? "6xl" : "5xl"} text-lightGrey`}
+          />
+          <span
+            class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+          >
+            {icon}
+          </span>
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
+<!-- 
 <div class="overflow-hidden shadow-sm pt-28 px-8 md:px-20 lg:px-40">
   <div class="marquee-content flex flex-wrap gap-4 items-center justify-center"> 
     {icons.map((icon) => (
@@ -48,5 +69,5 @@ const icons = [
       </button>
     ))}
   </div>
-</div>
+</div> -->
 
