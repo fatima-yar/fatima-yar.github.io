@@ -1,6 +1,6 @@
 ---
 import NavBarButtons from "./UI/NavBarButtons.astro";
-
+import { CV_URL } from "../components/UI/CV.astro"
 const linkClass = "block p-4 text-sm font-semibold text-lightGrey hover:text-brightPink";
 ---
 
@@ -49,7 +49,7 @@ const linkClass = "block p-4 text-sm font-semibold text-lightGrey hover:text-bri
           <li class="mb-1">
             <a
               class={linkClass}
-              href="https://drive.google.com/file/d/1V7SiTeouBjzm48H6INKF698YVq1b51Pn/view"
+              href={CV_URL}  
               target="_blank"
               rel="noopener noreferrer"
             >
