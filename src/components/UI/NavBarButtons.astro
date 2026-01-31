@@ -1,5 +1,5 @@
 ---
-
+import { CV_URL } from "../UI/CV.astro"
 ---
 
 <ul class="hidden lg:flex lg:justify-center lg:space-x-20 text-md">
@@ -7,6 +7,15 @@
   <li><a class=" text-lightGrey hover:text-brightPink transition-all duration-300  " href="/">Home</a></li>
   <li><a class=" text-lightGrey hover:text-brightPink transition-all duration-300" href="/#about">About&nbspMe</a></li>
   <li><a class=" text-lightGrey hover:text-brightPink transition-all duration-300 scroll-smooth" href="/#portfolio">Portfolio</a></li>
-  <li><a class=" text-lightGrey hover:text-brightPink transition-all duration-300" target="_blank"  href="https://drive.google.com/file/d/1V7SiTeouBjzm48H6INKF698YVq1b51Pn/view">My&nbspCV</a></li>
+  <li>
+  <a
+    href={CV_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-lightGrey hover:text-brightPink transition-all duration-300"
+  >
+    My&nbsp;CV
+  </a>
+</li>
   <li><a class=" text-lightGrey hover:brightness-105 bg-gradientPink transition-all duration-300 pl-3 pr-3 pt-2 pb-2 rounded-md hover:scale-105" href="/#contact">Contact</a></li>
-  <ul/>
+</ul>

@@ -1,4 +1,12 @@
 
-
-<button onclick="window.open('https://drive.google.com/file/d/1V7SiTeouBjzm48H6INKF698YVq1b51Pn/view', '_blank');" class="text-lightGrey bg-brightPink pl-6 pr-6 pt-2 pb-2 rounded-md hover:scale-105 transition-all duration-300"
->My CV</button>
+---
+import { CV_URL } from "../UI/CV.astro"
+---
+<a
+  href={CV_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-block text-lightGrey bg-brightPink pl-6 pr-6 pt-2 pb-2 rounded-md hover:scale-105 transition-all duration-300"
+>
+  My CV
+</a>
